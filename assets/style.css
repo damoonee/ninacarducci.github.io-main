@@ -3,8 +3,11 @@ body {
 	margin: auto;
 }
 * {
-	font-family: 'Inter';
+	font-family: 'Inter', "arial", serif;
 	font-style: normal;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 .top-header {
 	background-color: white;
@@ -80,7 +83,7 @@ body {
 	font-size: 30px;
 }
 .about-me__introduction {
-	font-family: 'Spectral';
+	font-family: 'Spectral' sans-serif;
 	font-weight: 800;
 	font-style: italic;
 	width: 60%;
@@ -105,6 +108,9 @@ body {
 	background-color: #BEB45A;
 	border-radius:0 ;
 }
+.nav-link:hover {
+	cursor: pointer;
+}
 .nav-pills .nav-link {
 	color: #000
 }
@@ -125,6 +131,12 @@ body {
 	height: 100%;
 	object-fit: cover;
 	padding: .5em;
+}
+.modal-dialog {
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 .mg-prev, .mg-next {
 	width: 30px;
